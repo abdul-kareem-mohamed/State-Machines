@@ -16,7 +16,7 @@ to modeling systems with different levels of complexity.
 
 The core focus of this repository lies in two key tasks carried out using the UPPAAL environment:   
 
-Traffic Light System Modeling:   
+#### Traffic Light System Modeling:   
 
 The first task involves developing a detailed model of a traffic light system for a city intersection, where 
 the lights for vehicles and pedestrians must operate in synchronization. This task aims to optimize traffic 
@@ -24,7 +24,7 @@ flow while ensuring pedestrian safety. UPPAAL’s simulation and verification ca
 to analyze the system’s behavior, validate synchronization between lights, and enforce safety 
 constraints.   
 
-Elevator System Modeling:   
+#### Elevator System Modeling:   
 
 The second task focuses on modeling an elevator system that responds to service requests from multiple 
 floors. The model captures the elevator's states, transitions, constraints, and fairness checks to ensure 
