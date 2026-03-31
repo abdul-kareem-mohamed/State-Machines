@@ -243,4 +243,21 @@ Similarly, when the car traffic light transitions to green, the pedestrian signa
 synchronization channel (pedes_red!). 
 Coordination Between Directions: 
 The North-South and East-West traffic lights are synchronized to ensure that while one direction has a 
-green light, the other direction remains red. 
+green light, the other direction remains red.   
+
+<img width="983" height="619" alt="image" src="https://github.com/user-attachments/assets/0912bac8-6e7d-440e-9b8c-74e51c6827b9" />
+
+
+<img width="922" height="612" alt="image" src="https://github.com/user-attachments/assets/d700fb6b-3640-475b-85c1-b507197340ab" />
+
+
+
+<img width="625" height="363" alt="image" src="https://github.com/user-attachments/assets/c352e627-dfcc-4f9c-9ab6-e397b51ad8d7" />
+
+
+<img width="651" height="380" alt="image" src="https://github.com/user-attachments/assets/da0f3c89-3d4f-4d6f-ba81-f08287885b1a" />
+
+
+
+
+
