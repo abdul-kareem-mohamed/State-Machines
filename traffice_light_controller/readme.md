@@ -224,7 +224,7 @@ Green to Red for North to South: Synchronized with the car light turning green (
 Red to Green for East to West: Synchronized with the car light turning red (pedes_green!). 
 Green to Red for East to West: Synchronized with the car light turning green (pedes_red!). 
  
-Temporal Parameters Assignment 
+Temporal Parameters Assignment <br>
 Timing constraints are assigned to each state to simulate real-world traffic flow dynamics: 
 Green State: The car traffic light remains green for a duration of 30 seconds (t ≤ 30). 
 Yellow State: The car traffic light remains yellow for a duration of 5 seconds (t ≤ 5). 
@@ -232,7 +232,7 @@ Red State: The car traffic light remains red for a duration of 30 seconds (t ≤
 These time durations are implemented in UPPAAL using clock variables (e.g., t), and conditions are 
 placed on transitions to enforce these constraints. 
  
-Ensuring Synchronization 
+Ensuring Synchronization <br>
 Synchronization is crucial to ensure that the North-South and East-West traffic lights operate 
 coherently, preventing conflicting signals and ensuring pedestrian safety. This is achieved using 
 synchronization channels in UPPAAL: 
@@ -245,17 +245,19 @@ Coordination Between Directions:
 The North-South and East-West traffic lights are synchronized to ensure that while one direction has a 
 green light, the other direction remains red.   
 
-<img width="983" height="619" alt="image" src="https://github.com/user-attachments/assets/0912bac8-6e7d-440e-9b8c-74e51c6827b9" />
+<img width="983" height="619" alt="image" src="https://github.com/user-attachments/assets/0912bac8-6e7d-440e-9b8c-74e51c6827b9" /> <br>
+Figure 1: Car_NS State Model <br>
 
 
-<img width="922" height="612" alt="image" src="https://github.com/user-attachments/assets/d700fb6b-3640-475b-85c1-b507197340ab" />
+<img width="922" height="612" alt="image" src="https://github.com/user-attachments/assets/d700fb6b-3640-475b-85c1-b507197340ab" /> <br>
+Figure 2: Car_EW State Model <br>
 
 
+<img width="625" height="363" alt="image" src="https://github.com/user-attachments/assets/c352e627-dfcc-4f9c-9ab6-e397b51ad8d7" /> <br>
+Figure 3: Ped_NS State Machine <br>
 
-<img width="625" height="363" alt="image" src="https://github.com/user-attachments/assets/c352e627-dfcc-4f9c-9ab6-e397b51ad8d7" />
-
-
-<img width="651" height="380" alt="image" src="https://github.com/user-attachments/assets/da0f3c89-3d4f-4d6f-ba81-f08287885b1a" />
+<img width="651" height="380" alt="image" src="https://github.com/user-attachments/assets/da0f3c89-3d4f-4d6f-ba81-f08287885b1a" /> <br>
+Figure 4: Ped_EW State Machine <br>
 
 
 
