@@ -56,3 +56,24 @@ Synchronization Channels: <br>
 request_up[floorNumber]! : To send an upward request from a floor. <br>
 request_down[floorNumber]! : To send a downward request from a floor. <br>
 ack[floorNumber]? : To receive acknowledgement that request has been serviced. <br>
+
+Constraints <br>
+Ground floor should not be able to make a down request and likewise the top floor should not be able 
+to make a up request. <br>
+Once a floor makes a request it should be served within 60 seconds. <br>
+
+Simulation and Verification <br>
+Once the model is set up, use UPPAAL simulator to observe the behavior of your elevator system and 
+Formulate verification queries in UPPAAL to ensure the following: <br>
+There is never a deadlock. <br>
+When a floor is in UpRequest/DownRequest state, it eventually returns to Idle state. <br>
+When an elevator in MovingUp/MovingDown state, it eventually goes to Loading/Unloading state. <br>
+Each elevator eventually services every floor. <br>
+
+Naming Requirements <br>
+Elevator template should be named as Elevator. <br>
+Floor template should be named as Floor. <br>
+Elevator states should be named as Idle, MovingUp, MovingDown, Loading_Unloading. <br>
+Floor states should be named as Idle, UpRequest, DownRequest <br>
+Variables should be named as curr_floor, dest_floor to represent current and destination floor 
+respectively in Elevator template. <br>
