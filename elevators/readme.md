@@ -77,3 +77,25 @@ Elevator states should be named as Idle, MovingUp, MovingDown, Loading_Unloading
 Floor states should be named as Idle, UpRequest, DownRequest <br>
 Variables should be named as curr_floor, dest_floor to represent current and destination floor 
 respectively in Elevator template. <br>
+
+ 
+#### Description <br>
+ 
+The objective of this task is to design and simulate a model of a two-elevator system serving requests 
+from six floors using UPPAAL. The elevators must efficiently handle a queue of requests and travel 
+between floors to provide timely service. Each elevator operates with four key states: Idle, MovingUp, 
+MovingDown, and Loading/Unloading. The elevators transition between these states based on the 
+current requests, ensuring they only accept upward requests from floors above and downward requests 
+from floors below their current position. Fairness is a crucial aspect of this system, requiring the 
+elevators to handle floor requests alternately to balance the load. Additionally, constraints ensure that 
+no elevator remains in the MovingUp or MovingDown state for more than 60 seconds. <br>
+ 
+The system also includes a Floor template representing the six floors, each capable of generating upward 
+or downward requests based on its position. The ground floor can only make upward requests, while 
+the top floor can only make downward requests. Synchronization channels are used to manage 
+communication between floors and elevators, ensuring that requests are acknowledged and serviced 
+within the specified time frame. The overall objective is to simulate the behavior of the elevators in 
+UPPAAL and verify key properties, including the absence of deadlocks, the eventual servicing of all 
+requests, and the efficient transition of elevators through their states. By achieving these goals, the 
+model demonstrates how state machines can be employed to ensure the reliability, efficiency, and 
+fairness of real-world elevator systems. <br>
